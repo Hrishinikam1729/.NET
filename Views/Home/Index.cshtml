@@ -1,0 +1,15 @@
+﻿@* @using AgriApp.Controllers; *@
+@using pclass;
+
+
+
+<div class="text-center">
+    @{
+        Product p = ViewData["Product1"] as Product;
+    }
+    <h1 class="display-4">@p.Name</h1>
+    <p>@p.Pid</p>
+    <P>@p.Price</P>
+    <p>@p.Quantity</p>
+    <img src="@p.Imageurl" alt="ROtavator" width="100" height="100">
+</div>
