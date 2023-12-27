@@ -1,0 +1,15 @@
+﻿@using person;
+@using System.Collections.Generic;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    @{
+        List<Person> friends = (List<Person>)this.ViewData["ifriends"];
+            foreach(Person p in  friends){
+                <p> @p.Id @p.FirstName @p.LastName</p>
+            }
+    }
+ 
+</div>

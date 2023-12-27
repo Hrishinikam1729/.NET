@@ -1,0 +1,13 @@
+@using BOL;
+
+<h1>
+    <div>
+        @{  
+            List<Department> dept = (List<Department>)this.ViewData["mydpt"];
+                foreach(Department d in dept){
+                    <p>@d.Id @d.Name @d.Location</p>
+                }
+
+        }
+    </div>
+</h1>
